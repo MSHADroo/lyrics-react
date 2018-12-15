@@ -1,0 +1,130 @@
+import React, { Component } from 'react';
+
+class Header extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          home: false
+        };
+      }
+
+      
+  render() {
+    const home = this.state.home;
+    return (
+        <div class="lyric-home" style={{background: 'url(http://www.2035themes.com/muusico/wp-content/uploads/2015/01/homepage-min.jpg) center center', backgroundSize:'cover'}}>
+        <div class="blog-back">
+        <div class="container">
+            <div class="row">
+                <div class="nav-top menu-container">
+                    <div class="main-header clearfix">
+                        <div class="logo pull-left">
+                            <div class="limg">
+                                <a href="http://www.2035themes.com/muusico/"><img alt="logo" class="img-responsive" src="http://www.2035themes.com/muusico/wp-content/themes/muusico/images/logo.png"></img>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pull-right">
+                            <div class="pull-left">
+                                <div id="navigation-menu" class="menu">
+                                    <nav id="menu">
+                                        <ul id="nav" class="sf-menu navigate">
+                                            <li id="menu-item-1844" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1784 current_page_item"><a href="http://www.2035themes.com/muusico/">Home</a></li>
+                                            <li id="menu-item-1817" class=" menu-item menu-item-type-post_type menu-item-object-page"><a href="http://www.2035themes.com/muusico/about-2/">About</a></li>
+                                            <li id="menu-item-1841" class=" menu-item menu-item-type-post_type menu-item-object-page"><a href="http://www.2035themes.com/muusico/artists/">Artists</a></li>
+                                            <li id="menu-item-1830" class=" menu-item menu-item-type-post_type menu-item-object-page"><a href="http://www.2035themes.com/muusico/albums/">Albums</a></li>
+                                            <li id="menu-item-2787" class=" menu-item menu-item-type-post_type menu-item-object-page"><a href="http://www.2035themes.com/muusico/genres/">Genres</a></li>
+                                            <li id="menu-item-1849" class=" menu-item menu-item-type-post_type menu-item-object-page"><a href="http://www.2035themes.com/muusico/blog/">News</a></li>
+                                            <li id="menu-item-1824" class=" menu-item menu-item-type-post_type menu-item-object-page"><a href="http://www.2035themes.com/muusico/contact/">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="pull-left header-search">
+                                <a id="search-button" href="void:function(0)"><i class="fa fa-search open-search"></i></a>
+                                <div id="mini-search-wrapper">
+                                    <form role="search" action="http://www.2035themes.com/muusico/" method="get">
+                                        <input type="search" id="s" name="s" class="s-input" required=""></input>
+                                        <input type="submit" class="s-submit" value="Search"></input>
+                                        <div class="searchminicats">
+                                            <ul>
+                                                <li>
+                                                    <input type="radio" name="post_type" value="lyrics" checked=""></input>Lyrics</li>
+                                                <li>
+                                                    <input type="radio" name="post_type" value="album"></input>Albums</li>
+                                                <li>
+                                                    <input type="radio" name="post_type" value="artist"></input>Artists</li>
+                                            </ul>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="pull-right social-icons">
+                                <ul>
+                                    <li><a href="http://twitter.com/2035themes"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://soundcloud.com/2035themes"><i class="fa fa-soundcloud"></i></a></li>
+                                    <li><a href="http://spotify.com/2035themes"><i class="fa fa-spotify"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="social-media pull-right">
+                            <div id="mobile-header">
+                                <div id="responsive-menu-button">
+                                    <span class="top"></span><span class="middle"></span><span class="middlecopy"></span><span class="bottom"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pre-header clearfix">
+                        <div class="lyric-alphabet  pull-left">
+                            <ul>
+                                <li><a href="http://www.2035themes.com/muusico/alphabet/?letter=num">#</a></li>
+                                <li><a href="http://www.2035themes.com/muusico/alphabet/?letter=A">A</a></li>
+                                <li><a href="http://www.2035themes.com/muusico/alphabet/?letter=B">B</a></li>
+                                <li><a href="http://www.2035themes.com/muusico/alphabet/?letter=C">C</a></li>
+                                <li><a href="http://www.2035themes.com/muusico/alphabet/?letter=D">D</a></li>
+                                <li><a href="http://www.2035themes.com/muusico/alphabet/?letter=E">E</a></li>
+                                <li><a href="http://www.2035themes.com/muusico/alphabet/?letter=F">F</a></li>
+                                <li><a href="http://www.2035themes.com/muusico/alphabet/?letter=G">G</a></li>
+                                <li><a href="http://www.2035themes.com/muusico/alphabet/?letter=H">H</a></li>
+                                <li><a href="http://www.2035themes.com/muusico/alphabet/?letter=I">I</a></li>
+                                <li><a href="http://www.2035themes.com/muusico/alphabet/?letter=J">J</a></li>
+                                <li><a href="http://www.2035themes.com/muusico/alphabet/?letter=K">K</a></li>
+                                <li><a href="http://www.2035themes.com/muusico/alphabet/?letter=L">L</a></li>
+                                <li><a href="http://www.2035themes.com/muusico/alphabet/?letter=M">M</a></li>
+                                <li><a href="http://www.2035themes.com/muusico/alphabet/?letter=N">N</a></li>
+                                <li><a href="http://www.2035themes.com/muusico/alphabet/?letter=O">O</a></li>
+                                <li><a href="http://www.2035themes.com/muusico/alphabet/?letter=P">P</a></li>
+                                <li><a href="http://www.2035themes.com/muusico/alphabet/?letter=Q">Q</a></li>
+                                <li><a href="http://www.2035themes.com/muusico/alphabet/?letter=R">R</a></li>
+                                <li><a href="http://www.2035themes.com/muusico/alphabet/?letter=S">S</a></li>
+                                <li><a href="http://www.2035themes.com/muusico/alphabet/?letter=T">T</a></li>
+                                <li><a href="http://www.2035themes.com/muusico/alphabet/?letter=U">U</a></li>
+                                <li><a href="http://www.2035themes.com/muusico/alphabet/?letter=V">V</a></li>
+                                <li><a href="http://www.2035themes.com/muusico/alphabet/?letter=W">W</a></li>
+                                <li><a href="http://www.2035themes.com/muusico/alphabet/?letter=X">X</a></li>
+                                <li><a href="http://www.2035themes.com/muusico/alphabet/?letter=Y">Y</a></li>
+                                <li><a href="http://www.2035themes.com/muusico/alphabet/?letter=Z">Z</a></li>
+                            </ul>
+                        </div>
+                        <div class="submit-lyric pos-center pull-right">
+                            <a href="http://www.2035themes.com/muusico/submit-lyrics/"><i class="fa fa-plus"></i> Submit Lyric</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="lyrics-title marginb20">
+            <div class="pull-left">
+                <h1>About</h1></div>
+        </div>
+    </div>
+    
+    </div>
+    );
+  }
+}
+
+export default Header;
+
