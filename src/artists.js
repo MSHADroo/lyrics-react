@@ -6,19 +6,24 @@ class Artists extends Component {
         this.state = {
             error: null,
             isLoaded: false,
-            items: []
+            // items: [],
+            // alphabet: this.props.alphabet
         };
       }
 
-      
-    componentDidMount() {
-    fetch("https://localhost:8000/signers/" + this.props.alphabet)
+componentWillReceiveProps(nextProps, nextContext) {
+    this.componentDidUpdate();
+}
+componentDidMount() {
+        // this.setState({alphabet:  this.props.alphabet});
+    fetch("http://localhost:8000/api/singers/byletter/" + this.props.alphabet)
         .then(res => res.json())
         .then(
         (result) => {
+            console.log(result);
             this.setState({
-            isLoaded: true,
-            items: result
+                isLoaded: true,
+                items: result
             });
         },
         // Note: it's important to handle errors here
@@ -34,6 +39,8 @@ class Artists extends Component {
     }
     
   render() {
+        // console.log(this.props.alphabet);
+
     const { error, isLoaded, items } = this.state;
 
     var content = '';
@@ -41,23 +48,27 @@ class Artists extends Component {
         content = <div>Error: {error.message}</div>;
     }else if(!isLoaded) {
         content = <div>Loading...</div>;
+    }else {
+        content = items.map(item => (
+            <div className="col-lg-6 col-sm-6 col-xs-6" key={item.name}>1.
+                <a href="artists/adele/">{item.name}</a>
+            </div>
+        ));
     }
-     content = items.map(item => (
-         <div className="col-lg-6 col-sm-6 col-xs-6" key={item.name}>1. 
-            <a href="artists/adele/">{item.name}</a>
-        </div>
-      ));
+
 
 
     return (
+
         <div className="row margint10 marginb10">
         <div className="col-lg-8 col-sm-8">
            <div className="album-line clearfix margint10">
               <div className="col-lg-6 col-sm-6 col-xs-6">
-                 <div className="table-title">Artist Name</div>
+                 <div className="table-title">{this.props.alphabet}</div>
               </div>
            </div>
            <div className="list-line margint10 clearfix">
+
                 {content}
            </div>
            <div className="row margint40">

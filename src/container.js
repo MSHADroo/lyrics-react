@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Artists from './artists';
 import Page from './page';
-import Home from './home';
+// import Home from './home';
 import { Link } from "react-router-dom";
 
 class Container extends Component {

@@ -12,8 +12,8 @@ class App extends Component {
       <Router>
         <div id="wrapper" className="fitvids ">
           <Header></Header>
-          <Route path="/alphabet/:id" component={Container} />
-          <Route path="/:page" component={Container} />
+          <Route path="/alphabet/:id" exact component={Container} />
+          <Route path="/:page" exact component={Container} />
           <Route path="/" exact component={Container} />
         </div>
       </Router>
